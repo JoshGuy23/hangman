@@ -8,6 +8,8 @@ lives = 6
 
 chosen_word = random.choice(hangman_words.word_list)
 
+print(hangman_art.logo)
+
 #Test
 print(f"To test, the word is {chosen_word}.")
 
