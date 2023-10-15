@@ -38,6 +38,7 @@ while "_" in display:
         count += 1
         
     if guessed_letter == False:
+        print(f"Wrong: {guess}")
         lives -= 1
         
     print(hangman_art.stages[lives])
