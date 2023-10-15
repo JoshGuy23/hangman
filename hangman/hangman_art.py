@@ -1,3 +1,4 @@
+# Each stage visually represents how many lives the player has left.
 stages = ['''
   +---+
   |   |
@@ -55,6 +56,7 @@ stages = ['''
 =========
 ''']
 
+# A logo for the game.
 logo = ''' 
  _                                             
 | |                                            

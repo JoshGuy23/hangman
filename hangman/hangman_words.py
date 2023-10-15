@@ -1,3 +1,4 @@
+# A list of words to be used in the game.
 word_list = [
 'abruptly', 
 'absurd', 
