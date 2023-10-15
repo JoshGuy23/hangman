@@ -1,67 +1,12 @@
 import random
-
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
+import hangman_art
+import hangman_words
 
 lives = 6
 
-word_list = ["aardvark", "baboon", "camel"]
+#word_list = ["aardvark", "baboon", "camel"]
 
-chosen_word = random.choice(word_list)
+chosen_word = random.choice(hangman_words.word_list)
 
 #Test
 print(f"To test, the word is {chosen_word}.")
@@ -86,7 +31,7 @@ while "_" in display:
     if guessed_letter == False:
         lives -= 1
         
-    print(stages[lives])
+    print(hangman_art.stages[lives])
             
     if lives == 0:
         print(f"Game Over. The word was {chosen_word}.")
