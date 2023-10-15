@@ -85,9 +85,14 @@ while "_" in display:
         
     if guessed_letter == False:
         lives -= 1
+        
+    print(stages[lives])
             
     if lives == 0:
         print(f"Game Over. The word was {chosen_word}.")
         break;
     
     print(f"{' '.join(display)}")
+    
+if lives > 0:
+    print("You win!")
