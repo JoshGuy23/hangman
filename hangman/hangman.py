@@ -10,7 +10,7 @@ print(f"To test, the word is {chosen_word}.")
 guess = input("Guess a letter that's in the word: ").lower()
 
 display = []
-for i in range(1, len(chosen_word)):
+for i in range(0, len(chosen_word)):
     display.append("_")
 
 count = 0
@@ -21,3 +21,5 @@ for letter in chosen_word:
     else:
         print("Wrong")
     count += 1
+    
+print(display)
