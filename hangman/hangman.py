@@ -13,8 +13,11 @@ display = []
 for i in range(1, len(chosen_word)):
     display.append("_")
 
+count = 0
 for letter in chosen_word:
     if letter == guess:
         print("Right")
+        display[count] = guess
     else:
         print("Wrong")
+    count += 1
