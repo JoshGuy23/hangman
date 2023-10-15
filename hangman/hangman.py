@@ -7,9 +7,11 @@ chosen_word = random.choice(word_list)
 #Test
 print(f"To test, the word is {chosen_word}.")
 
+display = []
+print(display)
+
 guess = input("Guess a letter that's in the word: ").lower()
 
-display = []
 for i in range(len(chosen_word)):
     display.append("_")
 
