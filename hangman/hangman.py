@@ -19,6 +19,7 @@ for i in range(len(chosen_word)):
 print(display)
 
 guessed_letters = []
+wrong = []
 while "_" in display:
     guess = input("Guess a letter that's in the word: ").lower()
     guessed_letter = False
@@ -38,7 +39,8 @@ while "_" in display:
         count += 1
         
     if guessed_letter == False:
-        print(f"Wrong: {guess}")
+        wrong.append(guess)
+        print(f"Wrong: {wrong}")
         lives -= 1
         
     print(hangman_art.stages[lives])
