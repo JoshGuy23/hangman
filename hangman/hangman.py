@@ -8,12 +8,11 @@ chosen_word = random.choice(word_list)
 print(f"To test, the word is {chosen_word}.")
 
 display = []
+for i in range(len(chosen_word)):
+    display.append("_")
 print(display)
 
 guess = input("Guess a letter that's in the word: ").lower()
-
-for i in range(len(chosen_word)):
-    display.append("_")
 
 count = 0
 for letter in chosen_word:
