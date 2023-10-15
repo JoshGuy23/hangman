@@ -18,9 +18,16 @@ for i in range(len(chosen_word)):
     display.append("_")
 print(display)
 
+guessed_letters = []
 while "_" in display:
     guess = input("Guess a letter that's in the word: ").lower()
     guessed_letter = False
+    
+    if guess in guessed_letters:
+        print(f"You already guessed {guess}. Try again.")
+        continue
+    else:
+        guessed_letters.append(guess)
 
     count = 0
     for letter in chosen_word:
